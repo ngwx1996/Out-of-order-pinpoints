@@ -1,0 +1,12 @@
+# robScanPin.sub -- Pin Reorder Buffer Scan job
+
+executable = robScanPinNormal.sh
+log = robScanPin.log
+output = outfile.txt
+error = errors.txt
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+queue
+
++IsWholeMachineJob = false
++IsSuspensionJob = false
